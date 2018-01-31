@@ -109,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				93C64E5420224E13009E4DF4 /* crime.csv */,
-				93C64E5120224DED009E4DF4 /* CrimeData.cpp */,
 				93C64E5220224DED009E4DF4 /* CrimeData.hpp */,
+				93C64E5120224DED009E4DF4 /* CrimeData.cpp */,
 			);
 			path = Data;
 			sourceTree = "<group>";

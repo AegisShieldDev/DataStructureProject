@@ -10,7 +10,7 @@
 
 using namespace std;
 
-vector <CrimeData> FileController :: readCrimeDataToVector(string gilename)
+vector <CrimeData> FileController :: readCrimeDataToVector(string filename)
 {
     std :: vector<CrimeData> crimeVector;
     string currentCSVLine;
@@ -18,7 +18,7 @@ vector <CrimeData> FileController :: readCrimeDataToVector(string gilename)
     
     ifstream dataFile(filename);
     
-    if(dataFile.isOpen())
+    if(dataFile.is_open())
     {
         while(!dataFile.eof())
         {
