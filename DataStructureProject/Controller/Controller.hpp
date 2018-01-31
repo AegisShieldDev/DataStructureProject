@@ -11,11 +11,12 @@
 
 #include <iostream>
 #include <vector>
+#include "Tools/Timer.hpp"
 
 class Controller
 {
 public:
     void start();
-}
+};
 
 #endif /* Controller_hpp */

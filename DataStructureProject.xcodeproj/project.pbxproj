@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		93C64E46202243A7009E4DF4 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93C64E44202243A7009E4DF4 /* Controller.cpp */; };
 		93C64E4C20224424009E4DF4 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93C64E4B20224424009E4DF4 /* Runner.cpp */; };
+		93C64E502022472A009E4DF4 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93C64E4E2022472A009E4DF4 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		93C64E44202243A7009E4DF4 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		93C64E45202243A7009E4DF4 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		93C64E4B20224424009E4DF4 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		93C64E4E2022472A009E4DF4 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		93C64E4F2022472A009E4DF4 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 		93C64E47202243C0009E4DF4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				93C64E4D20224710009E4DF4 /* Tools */,
 				93C64E44202243A7009E4DF4 /* Controller.cpp */,
 				93C64E45202243A7009E4DF4 /* Controller.hpp */,
 			);
@@ -97,6 +101,15 @@
 			children = (
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		93C64E4D20224710009E4DF4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				93C64E4E2022472A009E4DF4 /* Timer.cpp */,
+				93C64E4F2022472A009E4DF4 /* Timer.hpp */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C64E502022472A009E4DF4 /* Timer.cpp in Sources */,
 				93C64E46202243A7009E4DF4 /* Controller.cpp in Sources */,
 				93C64E4C20224424009E4DF4 /* Runner.cpp in Sources */,
 			);
