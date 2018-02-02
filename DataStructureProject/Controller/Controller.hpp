@@ -17,7 +17,7 @@
 class Controller
 {
 private:
-    findMaxAndMin();
+    void findMaxAndMin();
 public:
     void start();
 };

@@ -12,7 +12,7 @@ using namespace std;
 
 void Controller :: start()
 {
-    findMaxAndMin()
+    findMaxAndMin();
 }
 
 void Controller :: findMaxAndMin()
@@ -30,14 +30,13 @@ void Controller :: findMaxAndMin()
         {
             minIndex = index;
         }
-        
-        if(myData [maxIndex] < myData[index])
+        else if(myData [maxIndex] < myData[index])
         {
             maxIndex = index;
         }
     }
     searchTimer.stopTimer();
     cout << "The smallest crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
-    cout << "The largest crime stat is at "  << minIndex << " and it is: " << myData[minIndex] << endl;
+    cout << "The largest crime stat is at "  << maxIndex << " and it is: " << myData[maxIndex] << endl;
     searchTimer.displayInformation();
 }
