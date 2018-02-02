@@ -13,6 +13,13 @@ using namespace std;
 void Controller :: start()
 {
     findMaxAndMin();
+    
+    testArray();
+}
+
+void Controller :: testArray()
+{
+    Array<int> testArray(45);
 }
 
 void Controller :: findMaxAndMin()
