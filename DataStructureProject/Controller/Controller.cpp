@@ -14,7 +14,11 @@ void Controller :: start()
 {
     //findMaxAndMin();
     
-    testArray();
+    //testArray();
+    
+    ArrayTester myTest;
+    myTest.testArrayUse();
+    myTest.testAdvancedArray();
 }
 
 void Controller :: testArray()
