@@ -44,7 +44,7 @@ Array<Type> :: Array(int size)
     this->size = size;
     
     internalArray = new Type[size];
-}
+};
 
 template <class Type>
 Array<Type> :: Array(const Array<Type> & toCopy)
@@ -57,13 +57,13 @@ Array<Type> :: Array(const Array<Type> & toCopy)
     {
         internalArray[index] = toCopy[index];
     }
-}
+};
 
 template <class Type>
 Array<Type> :: ~Array()
 {
     delete [] internalArray;
-}
+};
 
 template <class Type>
 Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
@@ -83,27 +83,27 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
         }
     }
     return *this;
-}
+};
 
 template <class Type>//Left of = sign -- assigns to reference
 Type & Array<Type> :: operator [] (int index)
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
-}
+};
 
 template <class Type>//Right of = sign -- copy
 Type Array<Type> :: operator [] (int index) const
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
-}
+};
 
 template <class Type>
 int Array<Type> :: getSize() const
 {
     return size;
-}
+};
 
 template <class Type>
 Type Array<Type> :: getFromIndex(int index)
@@ -113,12 +113,12 @@ Type Array<Type> :: getFromIndex(int index)
     Type value = internalArray[index];
     
     return value;
-}
+};
 
 template <class Type>
 void Array<Type> :: setAtIndex(int pos, Type item)
 {
     assert(pos >= 0 && pos < size);
     internalArray[pos] = item;
-}
+};
 #endif /* Array_hpp */
