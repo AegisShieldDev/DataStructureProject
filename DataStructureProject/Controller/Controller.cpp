@@ -20,6 +20,11 @@ void Controller :: start()
 void Controller :: testArray()
 {
     Array<int> testArray(45);
+    cout << testArray.getSize() << endl;
+    
+    testArray[0] = 100;
+    testArray.setAtIndex(0, 101);
+    cout << testArray[0] << endl;
 }
 
 void Controller :: findMaxAndMin()

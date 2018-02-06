@@ -32,7 +32,7 @@ public:
     Type& operator [] (int index);
     Type operator [] (int index) const;
     
-    int getsize() const;
+    int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
 };
@@ -100,7 +100,7 @@ Type Array<Type> :: operator [] (int index) const
 }
 
 template <class Type>
-int Array<Type> :: getsize() const
+int Array<Type> :: getSize() const
 {
     return size;
 }
