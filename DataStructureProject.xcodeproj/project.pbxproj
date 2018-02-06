@@ -43,6 +43,7 @@
 		93F1CDCC202A33EE0051A2D6 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		93F1CDCD202A33EE0051A2D6 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		93F1CDD0202A41590051A2D6 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		93F1CDD1202A488B0051A2D6 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				93F1CDD0202A41590051A2D6 /* Node.hpp */,
+				93F1CDD1202A488B0051A2D6 /* LinearNode.hpp */,
 			);
 			path = Node;
 			sourceTree = "<group>";

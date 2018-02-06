@@ -25,24 +25,24 @@ template <class Type>
 Node<Type> :: Node()
 {
     
-}
+};
 
 template <class Type>
 Node<Type> :: Node(Type data)
 {
     this->data = data;
-}
+};
 
 template <classType>
 void Node<Type> :: setData(Type data)
 {
     this->data = data;
-}
+};
 
 template <class Type>
 void Node<Type> :: getData()
 {
     return data;
-}
+};
 
 #endif /* Node_h */
