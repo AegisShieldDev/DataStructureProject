@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		938E57AB202CE1EB001374AA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		93A1B96B2024EFBC0099EEA3 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		93BB882B2034BD100035A17B /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		93C64E3A20224364009E4DF4 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C64E44202243A7009E4DF4 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		93C64E45202243A7009E4DF4 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 			children = (
 				93A1B96B2024EFBC0099EEA3 /* Array.hpp */,
 				938E57AB202CE1EB001374AA /* List.hpp */,
+				93BB882B2034BD100035A17B /* LinkedList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
