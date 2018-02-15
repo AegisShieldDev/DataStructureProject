@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93BB882E2034CD8A0035A17B /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93BB882C2034CD8A0035A17B /* LinkedListTester.cpp */; };
 		93C64E46202243A7009E4DF4 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93C64E44202243A7009E4DF4 /* Controller.cpp */; };
 		93C64E4C20224424009E4DF4 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93C64E4B20224424009E4DF4 /* Runner.cpp */; };
 		93C64E502022472A009E4DF4 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93C64E4E2022472A009E4DF4 /* Timer.cpp */; };
@@ -31,6 +32,8 @@
 		938E57AB202CE1EB001374AA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		93A1B96B2024EFBC0099EEA3 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		93BB882B2034BD100035A17B /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		93BB882C2034CD8A0035A17B /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
+		93BB882D2034CD8A0035A17B /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		93C64E3A20224364009E4DF4 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C64E44202243A7009E4DF4 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		93C64E45202243A7009E4DF4 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 			children = (
 				93F1CDCC202A33EE0051A2D6 /* ArrayTester.cpp */,
 				93F1CDCD202A33EE0051A2D6 /* ArrayTester.hpp */,
+				93BB882C2034CD8A0035A17B /* LinkedListTester.cpp */,
+				93BB882D2034CD8A0035A17B /* LinkedListTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				93C64E5A20225C13009E4DF4 /* CrimeData.cpp in Sources */,
 				93C64E5720224F7A009E4DF4 /* FileController.cpp in Sources */,
 				93C64E46202243A7009E4DF4 /* Controller.cpp in Sources */,
+				93BB882E2034CD8A0035A17B /* LinkedListTester.cpp in Sources */,
 				93F1CDCE202A33EE0051A2D6 /* ArrayTester.cpp in Sources */,
 				93C64E4C20224424009E4DF4 /* Runner.cpp in Sources */,
 			);
