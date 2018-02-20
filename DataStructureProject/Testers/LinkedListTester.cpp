@@ -78,6 +78,6 @@ void LinkedListTester :: testListWithStrings()
     strings.remove(0);
     strings.add("Five");
     strings.addAtIndex(0, "Six");
-    cout << strings.getFront()->getData() << " is at the front of the list and should be Five" << endl;
-    cout << strings.getEnd()->getData() << " is at the end of the list and should be Six" << endl;
+    cout << strings.getFront()->getData() << " is at the front of the list and should be Six" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be Five" << endl;
 }

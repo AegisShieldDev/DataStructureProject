@@ -7,6 +7,8 @@
 //
 
 #include "Controller.hpp"
+#include "LinkedListTester.hpp"
+
 
 using namespace std;
 
@@ -20,7 +22,10 @@ void Controller :: start()
     //myTest.testArrayUse();
     //myTest.testAdvancedArray();
     
-    //LinkedListTester testListBasics();
+    LinkedListTester myTest;
+    myTest.testListBasics();
+    myTest.testListWithStrings();
+    myTest.testListWithData();
 }
 
 void Controller :: testArray()
