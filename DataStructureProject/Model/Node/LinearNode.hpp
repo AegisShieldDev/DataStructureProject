@@ -26,10 +26,10 @@ public:
 };
 
 template <class Type>
-LinearNode<Type> :: LinearNode() : Node<Type>
+LinearNode<Type> :: LinearNode() : Node<Type>()
 {
     this->next = nullptr;
-};
+}
 
 template <class Type>
 LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
@@ -38,13 +38,13 @@ LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
 };
 
 template <class Type>
-LinearNode<Type> :: LinearNode(type data, LinearNode<Type> * next) : Node<Type>(data)
+LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(data)
 {
     this->next = next;
 };
 
 template <class Type>
-LinearNode<Type> :: setNextNode(LinearNode<Type> * nextNodePointer)
+void LinearNode<Type> :: setNextNode(LinearNode<Type> * nextNodePointer)
 {
     this->next = nextNodePointer;
 };

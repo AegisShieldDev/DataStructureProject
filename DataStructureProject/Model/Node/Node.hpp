@@ -12,7 +12,7 @@
 template <class Type>
 class Node {
 protected:
-    type data:
+    Type data;
     
 public:
     Node();
@@ -33,14 +33,14 @@ Node<Type> :: Node(Type data)
     this->data = data;
 };
 
-template <classType>
+template <class Type>
 void Node<Type> :: setData(Type data)
 {
     this->data = data;
 };
 
 template <class Type>
-void Node<Type> :: getData()
+Type Node<Type> :: getData()
 {
     return data;
 };

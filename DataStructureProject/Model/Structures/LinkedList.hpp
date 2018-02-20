@@ -13,9 +13,6 @@ using namespace std;
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 
-
-#endif /* LinkedList_h */
-
 template <class Type>
 class LinkedList : public List<Type>
 {
@@ -27,8 +24,9 @@ public:
     LinkedList();
     virtual ~LinkedList();
     int getSize() const;
-    LinearNode<Type> * front;
-    LinearNode<Type> * end;void add(Type item);
+    LinearNode<Type> * getFront();
+    LinearNode<Type> * getEnd();
+    void add(Type item);
     void addAtIndex(int index, Type item);
     Type getFromIndex(int index);
     Type remove(int index);
@@ -86,7 +84,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
         LinearNode<Type> * toBeAdded = new LinearNode<Type>(item);
         if(index == 0)
         {
-            toBeAdded->setNetNode(front);
+            toBeAdded->setNextNode(front);
             front = toBeAdded;
         }
         else
@@ -106,9 +104,27 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
 }
 
 template <class Type>
-void LinkedList<Type> :: remove(int index)
+Type LinkedList<Type> :: getFromIndex(int index)
 {
-    assert(index >= 0 && index < this->size)
+    assert(index >= 0 && index < this->size);
+    Type data;
+    
+    LinearNode<Type> * current = front;
+    
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    
+    return data;
+}
+
+template <class Type>
+Type LinkedList<Type> :: remove(int index)
+{
+    assert(index >= 0 && index < this->size);
     LinearNode<Type> * current = front;
     LinearNode<Type> * toBeRemoved = nullptr;
     LinearNode<Type> * previous = nullptr;
@@ -117,7 +133,7 @@ void LinkedList<Type> :: remove(int index)
     
     if(index == 0)
     {
-        toBeRemoved = font;
+        toBeRemoved = front;
         this->front = this->front->getNextNode();
     }
     else
@@ -158,8 +174,11 @@ LinearNode<Type> * LinkedList<Type> :: getFront()
 {
     return this->front;
 }
+
 template <class Type>
-LinearNode<Type> :: getSize() const
+int LinkedList<Type> :: getSize() const
 {
     return this->size;
 }
+
+#endif /* LinkedList_h */
