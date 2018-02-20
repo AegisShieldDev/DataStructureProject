@@ -20,6 +20,7 @@ class LinkedListTester
 public:
     void testListBasics();
     void testListWithData();
+    void testListWithStrings();
 };
 
 #endif /* LinkedListTester_hpp */

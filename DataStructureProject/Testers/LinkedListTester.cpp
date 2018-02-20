@@ -55,4 +55,29 @@ void LinkedListTester :: testListWithData()
     listTimer.stopTimer();
     cout << "The random crimes stat is: " << totalViolentRate << " , and here is the timer" << endl;
     listTimer.displayInformation();
-}	
+}
+
+void LinkedListTester :: testListWithStrings()
+{
+    LinkedList<string> strings;
+    strings.add("One");
+    cout << strings.getFront()->getData() << " is at the front of the list and should be One" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be One" << endl;
+    strings.add("Two");
+    cout << strings.getFront()->getData() << " is at the front of the list and should be One" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be Two" << endl;
+    strings.addAtIndex(1, "Three");
+    strings.add("Four");
+    cout << strings.getFront()->getData() << " is at the front of the list and should be One" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be Four" << endl;
+    cout << "This loop should print 4 lines" << endl;
+    for (int i = 0; i < strings.getSize(); i++)
+    {
+        cout << strings.getFromIndex(i) << endl;
+    }
+    strings.remove(0);
+    strings.add("Five");
+    strings.addAtIndex(0, "Six");
+    cout << strings.getFront()->getData() << " is at the front of the list and should be Five" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be Six" << endl;
+}
