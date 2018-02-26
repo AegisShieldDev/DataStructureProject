@@ -12,7 +12,7 @@
 #include "LinkedList.hpp"
 
 template <class Type>
-class stack : public LinkedList<Type>
+class Stack : public LinkedList<Type>
 {
 public:
     Stack();
@@ -20,7 +20,7 @@ public:
     
     void push(Type data);
     Type pop();
-    Type peel();
+    Type peek();
     
     void add(Type data);
     void addAtIndex(int index, Type data);
@@ -81,7 +81,7 @@ Type Stack<Type> :: pop()
     Type removed = this->front->getData();
     
     LinearNode<Type> * removedNode = this->getFront();
-    this->front = removedNode-getNextNode();
+    this->front = removedNode->getNextNode();
     delete removedNode;
     
     this->size--;
@@ -93,7 +93,7 @@ template <class Type>
 Type Stack<Type> :: remove(int index)
 {
     assert(index == 0);
-    return pop;
+    return pop();
 }
 
 template <class Type>

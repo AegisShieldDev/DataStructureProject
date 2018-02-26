@@ -44,7 +44,7 @@ Queue<Type> :: ~Queue()
     for(LinearNode<Type> * removed = this ->front; removed != nullptr; removed = this->front)
     {
         this->front = removed->getNextNode();
-        delete removedl
+        delete removed;
     }
 }
 
@@ -98,7 +98,7 @@ Type Queue<Type> :: remove(int index)
 }
 
 template <class Type>
-Queue<Type> :: clear()
+void Queue<Type> :: clear()
 {
     while(this->front != nullptr)
     {
@@ -117,7 +117,7 @@ template <class Type>
 Type Queue<Type> :: getFromIndex(int index)
 {
     assert(index == 0);
-    return peek;
+    return peek();
 }
 
 #endif /* Queue_h */
