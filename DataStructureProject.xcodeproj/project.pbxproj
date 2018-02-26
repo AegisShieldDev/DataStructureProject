@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		930AAE31203F4AEA00C4EAF5 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
-		930AAE32203F502500C4EAF5 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		930AAE32203F502500C4EAF5 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		938E57AB202CE1EB001374AA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		93A1B96B2024EFBC0099EEA3 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		93BB882B2034BD100035A17B /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
@@ -47,6 +47,7 @@
 		93C64E5820225BFE009E4DF4 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = "/Users/wmil5119/Desktop/C++/DataStructureProject/DataStructureProject/Data/CrimeData.hpp"; sourceTree = "<absolute>"; };
 		93C64E5920225C13009E4DF4 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		93C64E5B20225DFF009E4DF4 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		93DF5A5C20448FB1004988F0 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		93F1CDCC202A33EE0051A2D6 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		93F1CDCD202A33EE0051A2D6 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		93F1CDD0202A41590051A2D6 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -71,7 +72,7 @@
 				938E57AB202CE1EB001374AA /* List.hpp */,
 				93A1B96B2024EFBC0099EEA3 /* Array.hpp */,
 				930AAE31203F4AEA00C4EAF5 /* Stack.hpp */,
-				930AAE32203F502500C4EAF5 /* Queue.h */,
+				930AAE32203F502500C4EAF5 /* Queue.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
@@ -176,6 +177,7 @@
 			children = (
 				93F1CDD0202A41590051A2D6 /* Node.hpp */,
 				93F1CDD1202A488B0051A2D6 /* LinearNode.hpp */,
+				93DF5A5C20448FB1004988F0 /* DoubleNode.hpp */,
 			);
 			path = Node;
 			sourceTree = "<group>";
