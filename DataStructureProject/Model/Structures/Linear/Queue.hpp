@@ -74,6 +74,13 @@ void Queue<Type> :: addAtIndex(int index, Type item)
 }
 
 template <class Type>
+void Queue<Type> :: add(Type item)
+{
+    enqueue(item);
+}
+
+
+template <class Type>
 Type Queue<Type> :: dequeue()
 {
     assert(this->size > 0);
