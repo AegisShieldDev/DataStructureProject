@@ -11,6 +11,7 @@
 using namespace std;
 void TestingStacksAndQueues :: stackVersusList()
 {
+    cout << "STACK VS LIST" << endl;
     Stack<int> numberStack;
     LinkedList<int> numberList;
     Timer stackTimer, listTimer;
@@ -65,7 +66,8 @@ void TestingStacksAndQueues :: stackVersusList()
 
 void TestingStacksAndQueues :: stackVersusQueue()
 {
-    vector<CrimeData> data = FileController :: readCrimeDataToVector("../../Data/crime.csv");
+    cout << "STACK VS QUEUE" << endl;
+    vector<CrimeData> data = FileController :: readCrimeDataToVector("/Users/wmil5119/Desktop/C++/DataStructureProject/DataStructureProject/Data/crime.csv");
     
     Stack<CrimeData> crimeStack;
     Queue<CrimeData> crimeQueue;
@@ -103,6 +105,13 @@ void TestingStacksAndQueues :: stackVersusQueue()
     
     for(int index = 0; index < 10; index++)
     {
+        stackFromQueue.push(queue.dequeue());
+        queueFromStack.enqueue(stack.pop());
+    }
+
+    
+    for(int index = 0; index < 10; index++)
+    {
         cout << index << endl;
         cout << "Stack result: " << stackFromQueue.pop() << endl;
         cout << "Queue result: " << queueFromStack.dequeue() << endl;
@@ -113,6 +122,7 @@ void TestingStacksAndQueues :: stackVersusQueue()
 
 void TestingStacksAndQueues :: queueVersusList()
 {
+    cout << "QUEUE VS LIST" << endl;
     Queue<string> wordQueue;
     LinkedList<string> wordList;
     

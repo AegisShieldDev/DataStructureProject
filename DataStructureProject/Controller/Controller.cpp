@@ -8,6 +8,7 @@
 
 #include "Controller.hpp"
 #include "LinkedListTester.hpp"
+#include "TestingStacksAndQueues.hpp"
 
 
 using namespace std;
@@ -22,10 +23,16 @@ void Controller :: start()
     //myTest.testArrayUse();
     //myTest.testAdvancedArray();
     
-    LinkedListTester myTest;
-    myTest.testListBasics();
-    myTest.testListWithStrings();
-    myTest.testListWithData();
+    //LinkedListTester myTest;
+    //myTest.testListBasics();
+    //myTest.testListWithStrings();
+    //myTest.testListWithData();
+    
+    TestingStacksAndQueues myTest;
+    myTest.stackVersusList();
+    myTest.stackVersusQueue();
+    myTest.queueVersusList();
+    
 }
 
 void Controller :: testArray()
@@ -63,3 +70,4 @@ void Controller :: findMaxAndMin()
     cout << "The largest crime stat is at "  << maxIndex << " and it is: " << myData[maxIndex] << endl;
     searchTimer.displayInformation();
 }
+
