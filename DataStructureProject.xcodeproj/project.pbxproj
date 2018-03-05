@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93A9A9CD204DC547001D639F /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93A9A9CB204DC547001D639F /* RecursionTester.cpp */; };
 		93BB882E2034CD8A0035A17B /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93BB882C2034CD8A0035A17B /* LinkedListTester.cpp */; };
 		93C64E46202243A7009E4DF4 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93C64E44202243A7009E4DF4 /* Controller.cpp */; };
 		93C64E4C20224424009E4DF4 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93C64E4B20224424009E4DF4 /* Runner.cpp */; };
@@ -34,6 +35,8 @@
 		930AAE32203F502500C4EAF5 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		938E57AB202CE1EB001374AA /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		93A1B96B2024EFBC0099EEA3 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		93A9A9CB204DC547001D639F /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
+		93A9A9CC204DC547001D639F /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
 		93BB882B2034BD100035A17B /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		93BB882C2034CD8A0035A17B /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		93BB882D2034CD8A0035A17B /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				93BB882D2034CD8A0035A17B /* LinkedListTester.hpp */,
 				93DF5A5D204492EE004988F0 /* TestingStacksAndQueues.cpp */,
 				93DF5A5E204492EE004988F0 /* TestingStacksAndQueues.hpp */,
+				93A9A9CB204DC547001D639F /* RecursionTester.cpp */,
+				93A9A9CC204DC547001D639F /* RecursionTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A9A9CD204DC547001D639F /* RecursionTester.cpp in Sources */,
 				93C64E502022472A009E4DF4 /* Timer.cpp in Sources */,
 				93C64E5A20225C13009E4DF4 /* CrimeData.cpp in Sources */,
 				93C64E5720224F7A009E4DF4 /* FileController.cpp in Sources */,
