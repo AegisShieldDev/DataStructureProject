@@ -9,6 +9,7 @@
 #include "Controller.hpp"
 #include "LinkedListTester.hpp"
 #include "TestingStacksAndQueues.hpp"
+#include "RecursionTester.hpp"
 
 
 using namespace std;
@@ -28,11 +29,14 @@ void Controller :: start()
     //myTest.testListWithStrings();
     //myTest.testListWithData();
     
-    TestingStacksAndQueues myTest;
-    myTest.stackVersusList();
-    myTest.stackVersusQueue();
-    myTest.queueVersusList();
+    //TestingStacksAndQueues myTest;
+    //myTest.stackVersusList();
+    //myTest.stackVersusQueue();
+    //myTest.queueVersusList();
     
+    RecursionTester test;
+    test.testRecursionNumbers();
+    test.testRecursionString();
 }
 
 void Controller :: testArray()
