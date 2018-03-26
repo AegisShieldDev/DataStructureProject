@@ -45,7 +45,7 @@ public:
     
     bool hasUndirectedConnection(int source, int target) const;
     bool areConnected(int source, int target) const;
-    std::set<int> neighors(int vertex) const;
+    std::set<int> neighbors(int vertex) const;
     
     void depthFirstTraversal(Graph<Type> & graph, int vertex);
     void breadthFirstTraversal(Graph<Type> & graph, int vertex);
@@ -164,7 +164,7 @@ bool Graph<Type> :: areConnected(int source, int target) const
 }
 
 template <class Type>
-std::set<int> Graph<Type> :: neighors(int vertex) const
+std::set<int> Graph<Type> :: neighbors(int vertex) const
 {
     assert(vertex < vertexCount);
     std::set<int> vertexNeighbors;
@@ -184,14 +184,14 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     bool visitedVerticies[MAXIMUM];
     assert(vertex < currentGraph.size());
-    std::fill_n(visitedVerticies, currentGraph.size(), false)
+    std::fill_n(visitedVerticies, currentGraph.size(), false);
     depthFirstTraversal(currentGraph, vertex, visitedVerticies);
 }
 
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
 {
-    std::set<int> connections = currentGraph.neighors(vertex);
+    std::set<int> connections = currentGraph.neighbors(vertex);
     std::set<int>::iterator setIterator;
     
     visited[vertex] = true;
@@ -201,7 +201,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, 
     {
         if(!visited[*setIterator])
         {
-            depthFirstTraversal(currentGraph, *setIterator, visited)
+            depthFirstTraversal(currentGraph, *setIterator, visited);
         }
     }
 }
@@ -209,7 +209,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, 
 template <class Type>
 int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex)
 {
-    assert(vstart >= 0 && start < vertexCount);
+    assert(vertex < currentGraph.size());
     int cost = 0;
     bool visited[MAXIMUM];
     std::set<int> connections;
@@ -262,8 +262,8 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
         {
             if(!visited[*setIterator])
             {
-                cost += weightCostMatrix[vertex][*setIterator];
                 visited[*setIterator] = true;
+                cout << currentGraph[*setIterator] << endl;
                 vertexQueue.push(*setIterator);
             }
         }

@@ -34,9 +34,12 @@ void Controller :: start()
     //myTest.stackVersusQueue();
     //myTest.queueVersusList();
     
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
+    //RecursionTester test;
+    //test.testRecursionNumbers();
+    //test.testRecursionString();
+    
+    GraphTester myTest;
+    myTest.testGraphs();
 }
 
 void Controller :: testArray()

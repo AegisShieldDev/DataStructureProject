@@ -18,6 +18,7 @@
 #include "../Testers/LinkedListTester.hpp"
 #include "../Testers/TestingStacksAndQueues.hpp"
 #include "../Testers/RecursionTester.hpp"
+#include "../Testers/GraphTester.hpp"
 
 class Controller
 {
