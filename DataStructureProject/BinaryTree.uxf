@@ -10,11 +10,12 @@
       <h>330</h>
     </coordinates>
     <panel_attributes>BinaryTreeNode&lt;Type&gt;
+bg=cyan
 --
 
 - root: BinaryTreeNode&lt;Type&gt; *
 - left: BinaryTreeNode&lt;Type&gt; *
-_ right: BinaryTreeNode&lt;Type&gt; *
+- right: BinaryTreeNode&lt;Type&gt; *
 
 --
 
@@ -39,6 +40,7 @@ _ right: BinaryTreeNode&lt;Type&gt; *
       <h>190</h>
     </coordinates>
     <panel_attributes>Node&lt;Type&gt;
+bg=green
 --
 
 #data : Type
@@ -55,11 +57,44 @@ _ right: BinaryTreeNode&lt;Type&gt; *
     <id>Relation</id>
     <coordinates>
       <x>480</x>
-      <y>300</y>
+      <y>290</y>
       <w>180</w>
-      <h>30</h>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+    <additional_attributes>10.0;20.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>490</y>
+      <w>380</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>Tree&lt;Type&gt;
+bg=pink
+--
+
+# root: BinaryTreeNode&lt;Type&gt; 
+
+--
+
+*Informational Methods*
++ getSize() : int
++ getHeight() : int
++ isComplete() : bool
++ isBalanced() : bool
+
+*Data Methods*
++ insert(Type) : void
++ contains(Type) : bool
++ remove(Type) : void
+
+*Traversals*
++ inOrderTraversal() : void
++ preOrderTraversal() : void
++ PostOrderTraversal() : void</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
