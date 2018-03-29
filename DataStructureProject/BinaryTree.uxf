@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>640</x>
-      <y>130</y>
+      <y>0</y>
       <w>360</w>
       <h>330</h>
     </coordinates>
@@ -35,7 +35,7 @@ bg=cyan
     <id>UMLClass</id>
     <coordinates>
       <x>240</x>
-      <y>220</y>
+      <y>90</y>
       <w>250</w>
       <h>190</h>
     </coordinates>
@@ -57,7 +57,7 @@ bg=green
     <id>Relation</id>
     <coordinates>
       <x>480</x>
-      <y>290</y>
+      <y>160</y>
       <w>180</w>
       <h>40</h>
     </coordinates>
@@ -68,7 +68,7 @@ bg=green
     <id>UMLClass</id>
     <coordinates>
       <x>310</x>
-      <y>490</y>
+      <y>360</y>
       <w>380</w>
       <h>360</h>
     </coordinates>
@@ -95,6 +95,54 @@ bg=pink
 + inOrderTraversal() : void
 + preOrderTraversal() : void
 + PostOrderTraversal() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>370</y>
+      <w>790</w>
+      <h>670</h>
+    </coordinates>
+    <panel_attributes>BinarySearchTree&lt;Type&gt;
+bg=gray
+-
+*Structure*
++ BinarySearchTree() : Constructor
++ ~BinarySearchTree() : Destructor
+
+*Informational Methods*
+# getSize() : int
+# getHeight() : int
+# isComplete() : bool
+# isBalanced() : bool
+
+*Recursive Information Helpers*
+# calculateSize(BinaryTreeNodes&lt;Type&gt; * startNode) : int
+# calculateHeight(BinaryTreeNodes&lt;Type&gt; * startNode) : int
+# isBalanced(BinaryTreeNodes&lt;Type&gt; * startNode) : bool
+# isComplete(BinaryTreeNodes&lt;Type&gt; * startNode, int index, int size) : bool
+
+*Data Methods*
++ insert(Type) : void
++ contains(Type) : bool
++ remove(Type) : void
+
+*Recursive Data Helpers*
+#removeNode(BinaryTreeNodes&lt;Type&gt; * removeMe) : void
+
+*Traversals*
++ inOrderTraversal : void
++ preOrderTraversal : void
++ postOrderTraversal : void
+
+*Recursive Traversal Helpers*
+# inOrderTraversal(BinaryTreeNodes&lt;Type&gt; * inStart) : void
+# preOrderTraversal(BinaryTreeNodes&lt;Type&gt; * preStart) : void
+# postOrderTraversal(BinaryTreeNodes&lt;Type&gt; * postStart) : void
+# getRightMostChild(BinaryTreeNodes&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *
+# getLeftMostChild(BinaryTreeNodes&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

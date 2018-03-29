@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>120</y>
+      <w>790</w>
+      <h>670</h>
+    </coordinates>
+    <panel_attributes>SimpleClass
+-
+*Structure*
++ BinarySearchTree() : Constructor
++ ~BinarySearchTree() : Destructor
+
+*Informational Methods*
+# getSize() : int
+# getHeight() : int
+# isComplete() : bool
+# isBalanced() : bool
+
+*Recursive Information Helpers*
+# calculateSize(BinaryTreeNodes&lt;Type&gt; * startNode) : int
+# calculateHeight(BinaryTreeNodes&lt;Type&gt; * startNode) : int
+# isBalanced(BinaryTreeNodes&lt;Type&gt; * startNode) : bool
+# isComplete(BinaryTreeNodes&lt;Type&gt; * startNode, int index, int size) : bool
+
+*Data Methods*
++ insert(Type) : void
++ contains(Type) : bool
++ remove(Type) : void
+
+*Recursive Data Helpers*
+#removeNode(BinaryTreeNodes&lt;Type&gt; * removeMe) : void
+
+*Traversals*
++ inOrderTraversal : void
++ preOrderTraversal : void
++ postOrderTraversal : void
+
+*Recursive Traversal Helpers*
+# inOrderTraversal(BinaryTreeNodes&lt;Type&gt; * inStart) : void
+# preOrderTraversal(BinaryTreeNodes&lt;Type&gt; * preStart) : void
+# postOrderTraversal(BinaryTreeNodes&lt;Type&gt; * postStart) : void
+# getRightMostChild(BinaryTreeNodes&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *
+# getLeftMostChild(BinaryTreeNodes&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

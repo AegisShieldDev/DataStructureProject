@@ -9,6 +9,8 @@
 #ifndef BinaryTreeNode_hpp
 #define BinaryTreeNode_hpp
 
+#include "/Users/wmil5119/Desktop/C++/DataStructureProject/DataStructureProject/Model/Node/Node.hpp"
+
 template <class Type>
 class BinaryTreeNode : public Node<Type>
 {
@@ -46,43 +48,37 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type>* root)
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type>* root)
 {
     this->root = root;
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type>* right)
+void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type>* right)
 {
     this->right = right;
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type>* left)
+void BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type>* left)
 {
     this->left = left;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getPrevious()
-{
-    return previous;
-}
-
-template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightNode()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight()
 {
     return this->right;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftNode()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft()
 {
     return this->left;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot()
 {
     return this->root;
 }
