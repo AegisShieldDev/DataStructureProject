@@ -19,6 +19,7 @@
 #include "../Testers/TestingStacksAndQueues.hpp"
 #include "../Testers/RecursionTester.hpp"
 #include "../Testers/GraphTester.hpp"
+#include "../Testers/BinaryTreeTester.hpp"
 
 class Controller
 {

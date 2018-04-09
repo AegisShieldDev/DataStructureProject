@@ -38,8 +38,11 @@ void Controller :: start()
     //test.testRecursionNumbers();
     //test.testRecursionString();
     
-    GraphTester myTest;
-    myTest.testGraphs();
+    //GraphTester myTest;
+    //myTest.testGraphs();
+    
+    BinaryTreeTester myTest;
+    myTest.doTreeStuff();
 }
 
 void Controller :: testArray()

@@ -17,9 +17,9 @@ template <class Type>
 class BinarySearchTree : public Tree<Type>
 {
 protected:
-    int calculateSize(BinaryTreeNode<Type> * startNode);
+    int calculateSize(BinaryTreeNode<Type> * current);
     int calculateHeight(BinaryTreeNode<Type> * startNode);
-    bool isBalanced(BinaryTreeNode<Type> * startNode);
+    bool isBalanced(BinaryTreeNode<Type> * current);
     bool isComplete(BinaryTreeNode<Type> * startNode, int index, int size);
     
     void inOrderTraversal(BinaryTreeNode<Type> * inStart);
@@ -57,24 +57,59 @@ public:
 };
 
 template <class Type>
-int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * startNode)
+int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * current)
 {
-    
+    if(current != nullptr)
+    {
+        return calculateSize(current->getLeft()) + calculateSize(current->getRight()) + 1;
+    }
+    return 0;
 }
 template <class Type>
 int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * startNode)
 {
-    
+    return calculateHeight(this->root);
 }
 template <class Type>
-bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * startNode)
+bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * current)
 {
+    
+    int leftHeight = 0;
+    int rightHeight = 0;
+    
+    if(current == nullptr)
+    {
+        return true;
+    }
+    
+    leftHeight = calculateHeight(current->getLeft());
+    rightHeight = calculateHeight(current->getRight());
+    
+    int heightDifference = abs(leftHeight - rightHeight);
+    bool leftBalanced = isBalanced(current->getLeft());
+    bool rightBalanced = isBalanced(current->getRight());
+    
+    if(heightDifference <= 1 && leftBalanced && rightBalanced)
+    {
+        return true;
+    }
+    
+    return false;
     
 }
 template <class Type>
 bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
 {
+    if(startNode == nullptr)
+    {
+        return true;
+    }
+    if(index >= size)
+    {
+        return false;
+    }
     
+    return(isComplete(startNode->getLeft(), 2 * index + 1, size) && isComplete(startNode->getRight(), 2 + index + 2, size));
 }
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * current)
@@ -176,7 +211,11 @@ void BinarySearchTree<Type> :: demoTraversalSteps(BinaryTreeNode<Type> * start)
 template <class Type>
 int BinarySearchTree<Type> :: getSize()
 {
-    return -1;
+    int size = 0;
+    
+    size += calculateSize(this->root);
+    
+    return size;
 }
 template <class Type>
 int BinarySearchTree<Type> :: getHeight()
@@ -191,7 +230,7 @@ bool BinarySearchTree<Type> :: isComplete()
 template <class Type>
 bool BinarySearchTree<Type> :: isBalanced()
 {
-    return false;
+    return isBalanced(this->root);
 }
 
 template <class Type>

@@ -10,6 +10,7 @@
       <h>670</h>
     </coordinates>
     <panel_attributes>SimpleClass
+bg=gray
 -
 *Structure*
 + BinarySearchTree() : Constructor
