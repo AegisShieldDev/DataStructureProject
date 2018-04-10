@@ -10,19 +10,19 @@
 
 void BinaryTreeTester:: doTreeStuff()
 {
-    testTree.insert(3);
-    testTree.insert(1);
-    testTree.insert(2);
-    testTree.insert(-3246000);
-    testTree.insert(12);
-    testTree.insert(7);
-    testTree.insert(5);
-    testTree.insert(6);
-    testTree.insert(8);
-    testTree.insert(5000);
-    testTree.insert(9001);
-    testTree.insert(10);
-    testTree.insert(600);
+    testTree.insert("Lorem");
+    testTree.insert("ipsum");
+    testTree.insert("dolor");
+    testTree.insert("sit");
+    testTree.insert("amet,");
+    testTree.insert("consectetur");
+    testTree.insert("adipiscing");
+    testTree.insert("elit.");
+    testTree.insert("Morbi");
+    testTree.insert("aliquam");
+    testTree.insert("elit");
+    testTree.insert("eget");
+    //testTree.insert("d");
     
     cout << "InOrder" << endl;
     testTree.inOrderTraversal();

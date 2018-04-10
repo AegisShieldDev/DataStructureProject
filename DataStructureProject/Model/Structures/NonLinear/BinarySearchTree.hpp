@@ -180,9 +180,9 @@ void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * preStart
 {
     if(preStart != nullptr)
     {
-        inOrderTraversal(preStart->getLeft());
         cout << preStart->getData() << endl;
-        inOrderTraversal(preStart->getRight());
+        preOrderTraversal(preStart->getLeft());
+        preOrderTraversal(preStart->getRight());
     }
 }
 template <class Type>
@@ -190,9 +190,10 @@ void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postSta
 {
     if(postStart != nullptr)
     {
-        inOrderTraversal(postStart->getLeft());
+        postOrderTraversal(postStart->getLeft());
+        postOrderTraversal(postStart->getRight());
         cout << postStart->getData() << endl;
-        inOrderTraversal(postStart->getRight());
+        
     }
 }
 template <class Type>
